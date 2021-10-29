@@ -26,7 +26,7 @@ import pt.lsts.neptus.types.vehicle.VehicleType;
 import pt.lsts.neptus.types.vehicle.VehiclesHolder;
 
 
-@PluginDescription(author="Manuel R.", category=CATEGORY.UNSORTED, name="Myplugin", version = "0.8", description = "This is my first plugin")
+@PluginDescription(author="Sif H.", category=CATEGORY.UNSORTED, name="Myplugin", version = "0.8", description = "This is my first plugin")
 public class MyFirstPlugin extends ConsoleLayer {
 
     private VehicleType vehicle;
@@ -124,7 +124,6 @@ public class MyFirstPlugin extends ConsoleLayer {
     public void on(Rpm rpm) {
         if (rpm.getSrc() == mainvehicleId) {
             rpmVal = rpm.getValue();
-            //System.out.println(rpmVal);
         }
     }
 
